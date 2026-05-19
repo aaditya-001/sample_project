@@ -1,0 +1,13 @@
+{
+  "name": "wcg-employee-management",
+  "version": "1.0.0",
+  "description": "Employee Management System with Spring Boot backend and React frontend",
+  "scripts": {
+    "backend": "cd employee-backend && mvnw.cmd spring-boot:run",
+    "frontend": "cd employee-react-frontend && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
